@@ -1,0 +1,90 @@
+{
+    "name": "Client",
+    "options": {
+      "idInjection": true,
+      "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "client"
+      }
+    },
+    "properties": {
+      "id_client": {
+        "type": "Number",
+        "required": true,
+        "length": Null,
+        "precision": 10,
+        "scale": 0,
+      
+        "mysql": {
+          "columnName": "id",
+          "dataType": "int",
+          "dataLength": Null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+     
+        "nama_perusahaan":{
+          "type": "String",
+          "required": true,
+          "length": 100,
+          "precision": 10,
+          "scale": 0,       
+          "mysql": {
+            "columnName": "nama_perusahaan",
+            "dataType": "varchar",
+            "dataLength": 100,
+            "dataPrecision": 10,
+            "dataScale": 0,
+            "nullable": "N"
+          }
+          
+        },
+        "kontak":{
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,      
+        "mysql": {
+          "columnName": "kontak",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "email_address":{
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "email_address",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "alamat_perusahaan":{
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "alamat_perusahaan",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      }
+    }
+  }

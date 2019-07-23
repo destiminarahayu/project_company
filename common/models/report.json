@@ -1,0 +1,133 @@
+{
+    "name": "Report",
+    "options": {
+      "idInjection": true,
+      "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "report"
+      }
+    },
+    "properties": {
+      "id": {
+        "type": "Number",
+        "required": true,
+        "length": null,
+        "precision": 10,
+        "scale": 0,      
+        "mysql": {
+          "columnName": "id",
+          "dataType": "int",
+          "dataLength": null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+     
+      "id_client": {
+        "type": "Number",
+        "required": true,
+        "length": 11,
+        "precision": 10,
+        "scale": 0,      
+        "mysql": {
+          "columnName": "id_client",
+          "dataType": "int",
+          "dataLength": 11,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+        "no_transaksi":{
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,      
+        "mysql": {
+          "columnName": "no_transaksi",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "tanggal":{
+        "type": "Date",
+        "required": true,
+        "length": null,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "tanggal",
+          "dataType": "date",
+          "dataLength": null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "pelanggan":{
+        "type": "String",
+        "required": true,
+        "length": 100,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "pelanggan",
+          "dataType": "varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "total":{
+        "type": "Number",
+        "required": true,
+        "length": null,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "total",
+          "dataType": "long",
+          "dataLength": null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "hpp":{
+        "type": "Number",
+        "required": true,
+        "length": null,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "hpp",
+          "dataType": "long",
+          "dataLength": null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      },
+      "laba":{
+        "type": "Number",
+        "required": true,
+        "length": null,
+        "precision": 10,
+        "scale": 0,     
+        "mysql": {
+          "columnName": "laba",
+          "dataType": "long",
+          "dataLength": null,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }     
+      }
+    }
+  }
