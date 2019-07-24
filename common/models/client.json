@@ -1,24 +1,24 @@
 {
     "name": "Client",
     "options": {
-      "idInjection": true,
+      "idInjection": false,
       "mysql": {
         "schema": "loopback-example-mysql",
         "table": "client"
       }
     },
     "properties": {
-      "id_client": {
+      "id": {
         "type": "Number",
         "required": true,
-        "length": Null,
+        "length": 11,
         "precision": 10,
         "scale": 0,
-      
+        "id":1,
         "mysql": {
           "columnName": "id",
           "dataType": "int",
-          "dataLength": Null,
+          "dataLength": 11,
           "dataPrecision": 10,
           "dataScale": 0,
           "nullable": "N"
